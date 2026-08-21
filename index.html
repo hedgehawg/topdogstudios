@@ -106,6 +106,10 @@
     width: 100%; display: block; border: 1px solid var(--line);
   }
   figcaption { font-size: 14px; color: var(--dim); padding-top: 10px; }
+  .deco-scrub { position: relative; }
+  .deco-dial { position: absolute; left: 0; right: 0; top: 80%; bottom: 0; cursor: grab; }
+  .deco-dial:active { cursor: grabbing; }
+  .deco-dial:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
   .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
 
   .study {
@@ -237,24 +241,105 @@
       <div class="study" id="decoherence">
         <div class="tag">Topology &middot; Language</div>
         <h3>Topology of Societal Decoherence</h3>
-        <p>As social feeds pull left and right toward different words, the two sides slowly stop sharing a language. This is a visualization. Our linguistic feasible space, our respective linguistic universes, are represented as topological manifolds (tori) modeled on findings from a consistent platform: the floor of Congress (1994 through 2025). The right and left have separated like a failed emulsion. The mathematical description is a fiber bundle on a torus, decohering.</p>
+        <p><strong>Data suggests the &ldquo;left&rdquo; and the &ldquo;right&rdquo; no longer speak the same language.</strong></p>
+        <p>As social feeds pull left and right toward different words, the two
+        sides slowly stop sharing a language. This is a visualization &mdash; our
+        linguistic feasible space, our respective linguistic universes, are
+        represented as topological manifolds (tori: donuts) &mdash; <a href="https://www.govinfo.gov/app/collection/CREC"
+        target="_blank" rel="noopener"><strong>using data from a
+        consistent platform: the floor of Congress (1981 through
+        2025)</strong></a>. Here you
+        can see that the right and left have separated like a failed emulsion.
+        The mathematical description is a fiber bundle on a torus, decohering.</p>
         <figure>
-          <img src="assets/decoherence-1x5.png" alt="Five-stage progression of a torus fiber bundle fraying from a shared baseline to parallel torus knots">
-          <figcaption>The fraying fiber bundle: shared baseline, algorithmic nudging, echo chambers, fraying commonality, parallel torus knots.</figcaption>
+          <div class="deco-scrub">
+            <video src="assets/decoherence-linguistic.mp4" data-fps="10" autoplay loop muted playsinline preload="metadata" aria-label="Animation of the linguistic torus: shared feasible space collapsing from 100 to 5 percent, measured from the Congressional Record, with historical events chronicled into a ledger as they pass"></video>
+            <div class="deco-dial" role="slider" tabindex="0" aria-label="Timeline, 1981 to 2025 — drag to scrub" aria-valuemin="1981" aria-valuemax="2025" aria-valuenow="1981"></div>
+          </div>
+          <figcaption>The shared linguistic feasible space, 1981&ndash;2025 &mdash; measured,
+          not modeled: nearly 870 million words of the Congressional Record
+          (Stanford&rsquo;s hein-daily parse 1981&ndash;93, govinfo CREC from
+          1994), collapsing from 100% to 5%. Each event surfaces beneath the
+          tori as it happens, then files into the ledger at top left &mdash; amber
+          for wars, gray for structural turns. Drag the timeline dial to scrub
+          back and forth; release to resume.</figcaption>
         </figure>
-        <div class="grid-2">
-          <figure>
-            <video src="assets/decoherence-societal.mp4" autoplay loop muted playsinline preload="metadata" aria-label="Animated torus fiber bundle fraying over time"></video>
-            <figcaption>Societal decoherence, animated.</figcaption>
-          </figure>
-          <figure>
-            <video src="assets/decoherence-linguistic.mp4" autoplay loop muted playsinline preload="metadata" aria-label="Animation of the linguistic torus"></video>
-            <figcaption>Empirical version. The shared linguistic feasible space splits to zero.</figcaption>
-          </figure>
-        </div>
+        <p>Here&rsquo;s what you&rsquo;re watching: each cloud is one
+        party&rsquo;s footprint in language-space &mdash; shared vocabulary on
+        one axis, emotional register on another, word meaning on the third.
+        Through the 1980s the two clouds interleave on a single surface: one
+        language, weathering the Gulf War and Somalia without a tear. Scrub
+        forward and they separate like oil from water &mdash; the Gingrich
+        snap, then slowly through the 2000s, faster after 2010 &mdash; until
+        what remains is two distinct tori, barely touching, at 5%.</p>
+        <p><strong>The tori genuinely re-cohere
+        slightly in the late 90s</strong>, shudder through
+        2009&ndash;12, tear violently in 2020&ndash;21, and end at &ldquo;Shared
+        Linguistic Feasible Space: 5%&rdquo; &mdash; not the parametric
+        version&rsquo;s clean 0%, because the data says the maximum tear was
+        the Jan-6-era Congress with a slight retreat since. I&rsquo;d argue 5%
+        is a more powerful ending than 0%: measured, not scripted, and quietly
+        hopeful.</p>
+        <p>Then again, <strong>perhaps a torus
+        isn&rsquo;t the right shape</strong> for language
+        at all. Speech isn&rsquo;t inherently circular &mdash; it never owes
+        us a return to where it started. A helix is the more natural form: it
+        lets the data breathe and evolve instead of repeating itself &mdash;
+        arguably a truer picture of a time series. Here it is:</p>
         <figure>
-          <img src="assets/decoherence-exhibition.png" alt="Six-stage exhibition print, 1994 to 2023">
-          <figcaption>Exhibition print: six stages, 1994 to 2023. Shared linguistic feasible space declines from 92% to 20%.</figcaption>
+          <div class="deco-scrub">
+            <video src="assets/decoherence-helix.mp4" data-fps="10" autoplay loop muted playsinline preload="metadata" aria-label="Animation of the fraying helix: a two-strand braid of congressional language winding tightly through the 1980s and unraveling into two frayed strands by 2025"></video>
+            <div class="deco-dial" role="slider" tabindex="0" aria-label="Timeline, 1981 to 2025 — drag to scrub" aria-valuemin="1981" aria-valuemax="2025" aria-valuenow="1981"></div>
+          </div>
+          <figcaption>The natural progression &mdash; the measured data on an
+          honest topology, extended to 1981&ndash;2025 (Stanford&rsquo;s
+          hein-daily parse of the Record for 1981&ndash;93, govinfo CREC from
+          1994). A torus implies discourse loops back on itself; the
+          Record doesn&rsquo;t. Here the braid&rsquo;s winding rate <em>is</em>
+          the measured shared space: it winds tightly through the Reagan years
+          while a common language holds, re-tightens briefly after 9/11, and
+          unravels as the space collapses
+          &mdash; fibers snapping and drifting through the Tea Party ramp to the
+          frayed divergence of the Jan-6-era Congress. This dial scrubs
+          too.</figcaption>
+        </figure>
+        <p>Notice how long the braid simply holds &mdash; through Reagan, the
+        Gulf War, Somalia, a classifier can barely tell the parties&rsquo;
+        vocabularies apart. The fraying is already underway, though: by 1994
+        the shared space has quietly drifted to about 72%. Then the snap
+        &mdash; the Gingrich Congress, when the Contract-with-America message
+        machine handed each party its own vocabulary almost overnight and the
+        braid jolts loose. It pulls briefly back together at 9/11 &mdash; the
+        last genuine coherence in the record &mdash; then unwinds for twenty
+        straight years, fraying through the Tea Party ramp until the strands
+        of the Jan-6-era Congress barely touch. None of this is scripted: the
+        winding is the measured data, recovering the history on its own.</p>
+        <figure>
+          <img src="assets/decoherence-measured-series.png" alt="Three line charts, 1994 to 2025: lexical partisanship, affective tone, and semantic distance measured from the Congressional Record, annotated with the Gingrich Congress, 9/11, the Tea Party era, and the 117th Congress" loading="lazy">
+          <figcaption>The three measured axes &mdash; lexical partisanship, affective
+          tone, semantic distance &mdash; from 1.06 million floor speeches, single
+          source (govinfo CREC), one Congress per point. The party-split detail
+          covers the CREC era (1994&ndash;2025); the helix&rsquo;s
+          1981&ndash;93 wing comes from the Stanford parse of the earlier
+          Record.</figcaption>
+        </figure>
+        <p><strong>Linguistic decoherence:</strong> because the Z-axis plots
+        1&nbsp;&minus;&nbsp;cosine&nbsp;similarity, it is an exact measure of
+        divergence. When the Z-axis spikes (as seen clearly around the 2010
+        Tea Party era and the post-2020 117th Congress), it reveals that the
+        two sides aren&rsquo;t just using different vocabularies (which is
+        what the X-axis measures). Instead, it shows that even after aligning
+        their baseline languages, they are using the exact same words to mean
+        entirely different things. The topological distance between their
+        shared concepts is widening, indicating that the speakers are
+        effectively talking past each other. For an intuitive explanation of
+        the Z-axis &mdash; disconnected manifolds, the Procrustes rotation, and the
+        angle between meanings &mdash;
+        <a href="https://misterconsistency.com/decoherence-z-axis.html" target="_blank" rel="noopener">read the full breakdown &rarr;</a></p>
+        <figure>
+          <img src="assets/decoherence-stages.png" alt="Six wireframe torus-pair panels, 1981 to 2025, laid side by side: one fused donut in 1981 progressively separating into two distinct donuts by 2025, shared linguistic feasible space declining from 100 to 5 percent" loading="lazy">
+          <figcaption>The six measured stages, laid plainly: 1981&ndash;2025,
+          100% to 5% shared.</figcaption>
         </figure>
       </div>
 
@@ -280,5 +365,60 @@
 <footer>
   <div class="wrap">&copy; Top Dog Studios LLC &middot; New York</div>
 </footer>
+
+<script>
+/* Decoherence animations — the dial baked into the frames becomes a real
+   scrubber (both mp4s are all-intra; every frame is an instant seek).
+   Thumb geometry measured from the frames: x 139..988 in a 1100px frame,
+   linear across 81 frames. */
+document.querySelectorAll('.deco-scrub').forEach((box) => {
+  const v = box.querySelector('video'), d = box.querySelector('.deco-dial');
+  if (!v || !d) return;
+  const FRAMES = 81, FPS = +(v.dataset.fps || 20), X0 = 139 / 1100, X1 = 988 / 1100;
+  const Y0 = +(d.getAttribute('aria-valuemin') || 1981),
+        Y1 = +(d.getAttribute('aria-valuemax') || 2025);
+  let wasPlaying = false, frame = 0;
+  function setFrame(fr) {
+    frame = Math.min(FRAMES - 1, Math.max(0, fr));
+    v.currentTime = (frame + 0.5) / FPS;
+    d.setAttribute('aria-valuenow', String(Math.round(Y0 + (frame / (FRAMES - 1)) * (Y1 - Y0))));
+  }
+  function seekTo(clientX) {
+    const r = v.getBoundingClientRect();
+    const xn = (clientX - r.left) / r.width;
+    const frac = Math.min(1, Math.max(0, (xn - X0) / (X1 - X0)));
+    setFrame(Math.round(frac * (FRAMES - 1)));
+  }
+  d.addEventListener('pointerdown', (e) => {
+    wasPlaying = !v.paused;
+    v.pause();
+    d.setPointerCapture(e.pointerId);
+    seekTo(e.clientX);
+    e.preventDefault();
+  });
+  d.addEventListener('pointermove', (e) => {
+    if (d.hasPointerCapture && d.hasPointerCapture(e.pointerId)) seekTo(e.clientX);
+  });
+  d.addEventListener('pointerup', (e) => {
+    if (d.hasPointerCapture && d.hasPointerCapture(e.pointerId)) d.releasePointerCapture(e.pointerId);
+    if (wasPlaying) v.play();
+  });
+  d.addEventListener('keydown', (e) => {
+    const step = e.key === 'ArrowLeft' ? -1 : e.key === 'ArrowRight' ? 1 : 0;
+    if (!step) return;
+    v.pause();
+    setFrame(frame + step);
+    e.preventDefault();
+  });
+  v.addEventListener('click', () => {
+    if (v.paused) v.play().catch(() => {});
+    else v.pause();
+  });
+  /* Autoplay can be refused (iOS Low Power Mode etc.) — retry in view. */
+  new IntersectionObserver((entries) => {
+    entries.forEach((en) => { if (en.isIntersecting && v.paused) v.play().catch(() => {}); });
+  }).observe(v);
+});
+</script>
 </body>
 </html>
